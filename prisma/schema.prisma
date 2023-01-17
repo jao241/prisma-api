@@ -24,6 +24,7 @@ model User {
 model Post {
   id Int @id @default(autoincrement())
   published Boolean @default(false)
+  content String?
   title String @db.VarChar(255)
   createdAt DateTime @default(now())
   updatedAt DateTime @default(now())
